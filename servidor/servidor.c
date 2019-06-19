@@ -502,9 +502,9 @@ int main(){
 			}
 			mensagem = recvMsg(&msg);
 			if(mensagem.status == MESSAGE_OK){
-				if(msg=='A'){
+				/*if(msg=='A'){
 					sendMsgToClient(escolhidas, MAX_CLIENT*sizeof(int), mensagem.client_id);
-				}
+				}*/
 				if(msg=='y'){
 					apertou=1; 
 					broadcast(&msg, sizeof(char));
