@@ -1106,7 +1106,7 @@ void mostraRegras(){
 void menuPersonagem(){
     char msg='A';
     sendMsgToServer(&msg, sizeof(char));
-    int *escolhidas = NULL;
+    /*int *escolhidas = NULL;
     escolhidas = (int *) calloc(MAX_CLIENT, sizeof(int));
     if (escolhidas == NULL) {
         printf("Erro ao alocar escolhidas\n"); 
@@ -1118,14 +1118,14 @@ void menuPersonagem(){
         if (escolhidas[i] == 0) auxWinxMenu[i] = winxMenu[i];
         else auxWinxMenu[i] = winxMenuCinza[i];
     }
-    free(escolhidas);
+    free(escolhidas);*/
     al_draw_bitmap(fundoMenu, 0, 0, 0);
-    al_draw_bitmap(auxWinxMenu[0], 58, 282, 0);
-    al_draw_bitmap(auxWinxMenu[1], 316, 282, 0);
-    al_draw_bitmap(auxWinxMenu[2], 574, 282, 0);
-    al_draw_bitmap(auxWinxMenu[3], 58, 557, 0);
-    al_draw_bitmap(auxWinxMenu[4], 316, 557, 0);
-    al_draw_bitmap(auxWinxMenu[5], 574, 557, 0);
+    al_draw_bitmap(WinxMenu[0], 58, 282, 0);
+    al_draw_bitmap(WinxMenu[1], 316, 282, 0);
+    al_draw_bitmap(WinxMenu[2], 574, 282, 0);
+    al_draw_bitmap(WinxMenu[3], 58, 557, 0);
+    al_draw_bitmap(WinxMenu[4], 316, 557, 0);
+    al_draw_bitmap(WinxMenu[5], 574, 557, 0);
     al_flip_display();
     //al_rest(1.0);
     
